@@ -1,0 +1,157 @@
+
+:root {
+--header-background: rgb(193, 127, 0, 0.5);
+--main-font: 'Trebuchet MS', 'sans-serif';
+--background-color: rgba(4, 54, 104, 0.841);
+--border-style: dotted;
+}
+
+body{
+    background-color:var(--background-color);
+    display:flex;
+    flex-direction:column;
+}
+
+header{
+    background-image: url(../images/Eye\ Tech.jpg);
+    padding:50px 0 50px 0;
+    width:100%;
+    font-family:var(--main-font);
+    background-color: var(--header-background);
+    color:rgba(255, 255, 255);
+    margin:0 40 0 40;
+}
+
+header img{
+    float:left;
+    width:150px;
+    height:150px;
+    border-radius:100px;
+    object-fit:cover;
+    padding:10px;
+}
+
+header h1{
+    padding-top: 35px;
+    float: left;
+    
+}
+
+nav {
+    font-family: var(--main-font);
+    background-color: antiquewhite;
+    height:75px;
+    width:100%;
+    text-align:center; 
+} 
+
+nav ul li {
+    display: inline-block;
+    margin: 0 80px 0 80px;
+    flex: 1 0 80px;
+}
+
+/* links on the nav column */
+.nav-link{
+    padding:10px;
+    font-family: var(--box-font);
+    box-sizing: 10px;   
+    border: 3px solid black;      
+    background-color: rgb(20, 154, 203);
+    
+}
+
+nav a{
+    text-decoration: none;
+    color:rgb(8, 203, 135);
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    padding: 50px;
+    font-family: var(--box-font);
+    border: 3px black;
+    border-style: solid;       
+    margin:10px 0px;   
+    background-color: beige;
+}
+
+#Info-1{
+    padding-left:80px;
+    padding-bottom:30px;
+}
+
+#Info-2{
+    padding-left:55px;
+}
+
+.box{ 
+    display:flex;
+    font-family: var(--box-font);
+    border: 3px solid black;      
+    background-color: rgb(20, 154, 203);
+    align-items:center;
+}
+
+.box h1{
+    margin: 0 20;
+    padding:40px;
+    border-right:2px  solid black;    
+}
+
+.box p{
+    padding-left:20px;
+}
+
+button{
+    opacity:0.75;
+    
+}
+/* Big Circle linked to prework */
+button h2 {
+    float:left;
+    margin:20px;
+    background-color: rgba(43, 43, 136, 2);
+    border-radius:10px;
+    padding:5px;
+} 
+/* Smaller circles linked to images and one with the previous work */
+button h3{
+    float:center;
+    background-color: rgba(192, 35, 35, 2);
+    margin:25px;
+    border-radius:10px;
+}
+
+button:hover{
+    opacity:1;
+    cursor:pointer;
+    transition:1.5s;
+    transform:scale(1.05)
+}
+
+
+#large-image{
+    background-image:url(../images/Coding\ Monitor.jpeg);
+    width:450px;
+    height:450px;
+    object-fit:contain;
+    border-radius:225px;
+    margin:20px 20px 20px 180px;
+}   
+
+.small-image{
+    height:200px;
+    width:200px;
+    border-radius:100px;
+    margin:10px 0px 10px 0px;
+    padding:10px;
+}
+
+#second-image{
+    background-image:url(../images/Hands\ on\ Keyboard.jpeg);   
+    object-fit:cover;
+    background-size:300px;
+    background-repeat:no-repeat;
+}
